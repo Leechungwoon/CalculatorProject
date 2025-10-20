@@ -28,8 +28,9 @@ public class App extends Calculator {
 
             //6. 계산 결과 출력
             //TODO 2. ArrayList 받을 예정
-//            calculator.getArrayList(result );
-//            System.out.println(arrayList);
+            //객체 생성
+            Calculator.addResult(result);
+
             System.out.println("결과: " + result);
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
             // 7. 입력값 받는 부분 -> null 안정성 참고
