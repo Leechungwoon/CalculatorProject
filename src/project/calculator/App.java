@@ -36,7 +36,31 @@ public class App extends Calculator {
 
             //6. 계산 결과 출력
             System.out.println("결과: " + result);
+
+            //삭제 여부
+            System.out.println("\n데이터를 삭제하시겠습니까? (remove 입력 시 삭제)");
+            String std = scanner.next();
+
+            if (std.equals("remove")){
+                calculator.removeResult(result);
+                System.out.println("삭제 됐습니다.");
+            } else {
+                System.out.println("삭제요소가 없습니다.");
+            }
+//
+//            if (std.equals("no")) {
+//                calculator.addResult(result);
+//                System.out.println("데이터가 저장됐습니다.");
+//            }else if (std.equals("remove")) {
+//                calculator.removeResult();
+//                System.out.println("삭제 됐습니다.");
+//            } else {continue;
+//            }
+
+
+            // 종료 여부
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
+
 
             // 7. 입력값 받는 부분 -> null 안정성 참고
             String a = scanner.next();
