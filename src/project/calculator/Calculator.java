@@ -5,7 +5,9 @@ import java.util.ArrayList;
 public class Calculator {
     // 연산 결과 저장하는 컬렉션 타입 필드 생성
     //1. 속성
-    private ArrayList<Integer> arrayList = new ArrayList<>();
+    private static ArrayList<Integer> arrayList = new ArrayList<>();
+    int result;
+
 
     //2. 생성자
     // 규칙
@@ -15,8 +17,12 @@ public class Calculator {
 
     //3. 기능
     //TODO 1. ArrayList 결과 값을 저장하는 얻는다.
-    //getter
+    //결과값 저장하는 메서드
+     public static void addResult(int result) {
+         arrayList.add(result); //result 데이터 추가
+     }
 
+     //getter
 
     // 1. 사칙연산을 수행한 후, 결과값을 반환하는 매서드 구헌
     //접근제어자, 반환데이터, 변수이름, 매개변수
