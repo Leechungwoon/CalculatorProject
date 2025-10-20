@@ -29,6 +29,28 @@ public class Calculator {
          return arrayList; //데이터 찾기
      }
 
+    //(순서: 5번)데이터 삭제
+    // 결과 저장 값 삭제하기 -> remove를 적으면 지워지는 기능
+    // 1. 출력 순서: 결과 저장 -> 결과 -> 저장값을 삭제하시겠습니까? -> remove 입력 -> 식제되었습니다.
+    //2.+ arrayList.remove(0)
+    public void removeResult(int result) {
+         if (!arrayList.isEmpty()){
+             this.arrayList.remove(0);
+         }else {
+             System.out.println("삭제요소가 없습니다.");
+             arrayList.add(result);
+         }
+    }
+
+//         if (equals("remove")){
+//             if (!arrayList.isEmpty()){
+//                 arrayList.remove(0);
+//             } else {
+//                 System.out.println("데이터 저장");
+//             }
+//         }
+//     }
+
     // (순서: 1번) 사칙연산을 수행한 후, 결과값을 반환하는 매서드 구헌
     //접근제어자, 반환데이터, 변수이름, 매개변수
     public int calculate (int num1, int num2, char operator) {
