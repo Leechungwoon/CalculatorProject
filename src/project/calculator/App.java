@@ -10,7 +10,6 @@ public class App extends Calculator {
         Scanner scanner = new Scanner(System.in);
         Calculator calculator = new Calculator();
 
-
         //2. 숫자 입력 지정
         while (true) {
             System.out.print("첫 번째 숫자 입력:");
@@ -24,7 +23,6 @@ public class App extends Calculator {
 
             //4. 결과값 변수 지정
             int result = calculator.calculate(num1, num2, operator);
-//            int result = 0;
 
             //TODO 2. ArrayList 받을 예정
             //3-1) 결과 출력
@@ -47,25 +45,14 @@ public class App extends Calculator {
             } else {
                 System.out.println("삭제요소가 없습니다.");
             }
-//
-//            if (std.equals("no")) {
-//                calculator.addResult(result);
-//                System.out.println("데이터가 저장됐습니다.");
-//            }else if (std.equals("remove")) {
-//                calculator.removeResult();
-//                System.out.println("삭제 됐습니다.");
-//            } else {continue;
-//            }
 
-
-            // 종료 여부
+            // 7.종료 여부
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
 
-
-            // 7. 입력값 받는 부분 -> null 안정성 참고
+            // 8. 입력값 받는 부분 -> null 안정성 참고
             String a = scanner.next();
 
-            // 8. 비교
+            // 9. 비교
             if (a.equals("exit")) {
                 System.out.println("계산을 종료합니다.");
                 break;
