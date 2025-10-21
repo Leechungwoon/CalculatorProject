@@ -8,7 +8,6 @@ public class Calculator {
     //(순서: 2) 컬렉션 선언
     private static ArrayList<Integer> arrayList = new ArrayList<>();
 
-
     //2. 생성자
     // 규칙
     //클래스와 이름이 같다.
@@ -42,15 +41,6 @@ public class Calculator {
          }
     }
 
-//         if (equals("remove")){
-//             if (!arrayList.isEmpty()){
-//                 arrayList.remove(0);
-//             } else {
-//                 System.out.println("데이터 저장");
-//             }
-//         }
-//     }
-
     // (순서: 1번) 사칙연산을 수행한 후, 결과값을 반환하는 매서드 구헌
     //접근제어자, 반환데이터, 변수이름, 매개변수
     public int calculate (int num1, int num2, char operator) {
@@ -76,10 +66,6 @@ public class Calculator {
                 System.out.println("기호를 다시 입력해주세요.\n");
                 System.out.println("결과:" +  result);
                 break;
-
-                // 반복되게 시도
-                //continue;
-//                System.out.println("결과 " + result);
         }
         // TODO 3. result를 ArrayList 저장
         return result;
